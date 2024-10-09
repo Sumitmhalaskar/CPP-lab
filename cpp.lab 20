@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class criketar{
+  public:
+  void Criketar(){
+    cout<<"i am a criketar"<<endl;
+  }
+};
+class sourbha: public criketar{
+  public:
+  void Sourbha(){
+    cout<<"my name is sourbha"<<endl;
+  }
+  
+};
+class engeenear :public sourbha{
+  public:
+  void Engeenear(){
+    cout<<" i am a also engeenear in oracle"<<endl;
+  }
+  
+};
+
+int main() 
+{
+    engeenear e1;
+    e1.Criketar();
+    e1.Sourbha();
+    e1.Engeenear();
+    return 0;
+}
